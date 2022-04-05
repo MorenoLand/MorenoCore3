@@ -1,0 +1,43 @@
+dist: bionic
+
+language: cpp
+compiler:
+  - clang
+
+git:
+  depth: false
+
+addons:
+  apt:
+    sources:
+      - sourceline: 'ppa:mhier/libboost-latest'
+#     - sourceline: 'ubuntu-toolchain-r-test'
+    packages:
+      - boost1.67
+      - libssl-dev
+      - libmysqlclient-dev
+      - libreadline6-dev
+      - zlib1g-dev
+      - libbz2-dev
+      - g++-8
+
+services:
+  - mysql
+
+before_install:
+  - git config user.email "travis@build.bot" && git config user.name "Travis CI"
+  - git tag -a -m "Travis build" init
+
+install:
+  - mkdir bin
+  - cd bin
+  - cmake ../ -DWITH_WARNINGS=0 -DWITH_COREDEBUG=0 -DUSE_COREPCH=1 -DUSE_SCRIPTPCH=1 -Wno-deprecated -DTOOLS=0 -DSERVERS=1 -DNOJEM=0 -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_FLAGS_DEBUG="-DNDEBUG" -DCMAKE_CXX_FLAGS_DEBUG="-DNDEBUG" -DCMAKE_INSTALL_PREFIX=check_install
+  - cd ..
+
+script:
+  - $CXX --version
+  - cd bin
+  - make -j 4 -k && make install
+  - cd check_install/bin
+  - ./authserver --version
+  - ./worldserver --version
