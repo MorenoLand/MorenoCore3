@@ -5,7 +5,7 @@
   <h3 align="center">MorenoCore</h3>
 
   <p align="center">
-      <img src="https://app.travis-ci.com/Denveous/MorenoCore3.svg?token=4DNrLZrAqbjUC85UwvEV&branch=335"><br>
+      <img src="[https://app.travis-ci.com/Denveous/MorenoCore3.svg?token=4DNrLZrAqbjUC85UwvEV&branch=335](https://app.travis-ci.com/Denveous/MorenoCore3.svg?token=4DNrLZrAqbjUC85UwvEV&branch=335)"><br>
      This is a modded TrinityCore framework. 
 
   * Side Note: If you plan to compile this please check the TrinityCore <a href="https://trinitycore.atlassian.net/wiki/spaces/tc/overview">wiki</a> for instructions, I *more than likely will not* release any of the custom files to go with our core, but this should work with the proper TDB.
