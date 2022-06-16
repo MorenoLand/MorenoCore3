@@ -10,7 +10,7 @@
 
   * Side Note: If you plan to compile this please check the TrinityCore <a href="https://trinitycore.atlassian.net/wiki/spaces/tc/overview">wiki</a> for instructions, I *more than likely will not* release any of the custom files to go with our core, but this should work with the proper TDB.
 
-  ** This project is for my *personal use* and *learning*. 🤪
+  * This project is for my *personal use* and *learning*. 🤪
 
   </p>
 </p>
