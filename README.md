@@ -8,7 +8,7 @@
       <img src="https://app.travis-ci.com/Denveous/MorenoCore3.svg?token=4DNrLZrAqbjUC85UwvEV&branch=335"><br>
      This is a modded TrinityCore framework. 
 
-  * Side Note: If you plan compile this check the TrinityCore <a href="https://trinitycore.atlassian.net/wiki/spaces/tc/overview">wiki</a> for instructions, I *more than likely will not* release any of the custom files to go with our core, but this should work with the proper TDB, not tryig to be rude; this is for my personal use and learning. 🤪
+  * Side Note: If you plan compile this check the TrinityCore <a href="https://trinitycore.atlassian.net/wiki/spaces/tc/overview">wiki</a> for instructions, I *more than likely will not* release any of the custom files to go with our core, but this should work with the proper TDB, not trying to be rude to anyone; this project is for my personal use and learning. 🤪
 
   </p>
 </p>
