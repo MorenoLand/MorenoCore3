@@ -26,7 +26,7 @@ services:
 
 before_install:
   - git config user.email "travis@build.bot" && git config user.name "Travis CI"
-  - git tag -a -m "Travis build" init
+  - git tag -a -m "Travis build" init-travis
 
 install:
   - mkdir bin
