@@ -36,6 +36,9 @@ jobs:
         openssl version
         ls /usr/lib/x86_64-linux-gnu/ | grep ssl
         ls /usr/lib/x86_64-linux-gnu/ | grep crypto
+    - name: Build with verbose output
+      run: |
+        cmake --build ${{ steps.strings.outputs.build-output-dir }} --config ${{ matrix.build_type }} -- VERBOSE=1
 
     - name: Configure CMake (without OpenSSL flags)
       run: >
